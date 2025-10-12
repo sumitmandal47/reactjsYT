@@ -1,50 +1,41 @@
-import React from 'react'
+import { Bookmark } from "lucide-react";
 
-const Card = () => {
-   
-  const items = [
-    {
-      id: "1",
-      Img:"",
-      name: "sumit",
-      Work: "Ui/UX designer",
-      price:"200k-250k"
-      
-    },
-    {
-      id:"2",
-      name: "rahul",
-      Work: "Front-End developer",
-      price:"200k-250k"
-      
-    },
-    {
-      id:"3",
-      name: "pushpa",
-      Work: "Backend Developer",
-      price:"200k-250k"  
-    },
-    {
-      id:"4",
-      Name: "nihar",
-      Work: "Fullstack developer",
-      price:"200k-250k"
-    },
-    {
-      id:"5",
-      name: "kuch kuch",
-      Work: "Data science Engineer",
-      price:"200k-250k"
-      
-    },
-  ];
-
+const Card = (props) => {
+  
 
   return (
     <>
-     
+      <div className="card">
+        <div className="top">
+          <img src={props.brandLogo} />
+          <button>
+            Save <Bookmark size={18} />
+          </button>
+        </div>
+
+        <div className="center">
+          <h2>
+            {props.company} <span>{props.datePosted}</span>
+          </h2>
+
+          <p>{props.post}</p>
+          <div className="tag">
+            <h4>{props.tag1}</h4>
+            <h4>{props.tag2}</h4>
+          </div>
+        </div>
+
+        <div className="bottom ">
+          <div>
+            <h3>{props.pay}</h3>
+            <p>{props.location},India</p>
+          </div>
+
+          <button>Apply now</button>
+        </div>
+      </div>
     </>
   );
-}
+};
 
-export default Card
+export default Card;
