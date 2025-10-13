@@ -1,0 +1,125 @@
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,
+body{
+height:100%;
+width:100%;
+background-color: #111;
+}
+
+.parent{
+  display: flex;
+ margin: 20px;
+  flex-wrap: wrap;
+ 
+}
+
+.card{
+  display: flex;
+   flex-direction: column;
+  height: 400px;
+  width: 300px;
+  background-color: #fff;
+  color: #111;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  
+}
+
+.top h4{
+  border: 1px solid #111;
+  padding: 7px;
+  border-radius: 20px;
+  background-color:green ;
+  color: white;
+}
+
+.center{
+  
+ position: relative;
+
+}
+.center img{
+   margin-left: 80px;
+  align-items: center;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+ align-items: center;
+ 
+}
+
+
+.center .cen1 h3{
+
+  margin-left: 80px;
+ margin-top: 10px;
+ font-size: 20px;
+
+}
+
+.center .cen1 p{
+
+  margin-left: 80px;
+  font-size: 16px;
+
+}
+
+
+
+.center .cen2{
+  display: flex;
+  gap:5px;
+   margin-top: 5px;
+}
+.cen2 h3{
+
+border-radius: 40px;
+}
+.cen2 span{
+
+padding: 5px;
+border-radius: 40px;
+background-color: blue;
+color: white;
+}
+.cen3{
+  margin: 10px;
+  font-size: 16px;
+}
+
+.bottom{
+  border-top: 1px solid #111;
+color: grey;
+  
+}
+
+.bottom button{
+ 
+  background-color: white;
+  border: none;
+  margin-top: 5px;
+  padding: 10px;
+   
+    width: 100%;
+  
+}
+
+.bottom button:hover{
+  background-color: blue;
+  color: white;
+}
