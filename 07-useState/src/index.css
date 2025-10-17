@@ -1,0 +1,32 @@
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html,
+body{
+height:100%;
+width:100%;
+}
+
+.counter{
+  width: 300px;
+  height: 400px;
+  background-color: aquamarine;
+
+
+
+}
+
+.counter h1{
+  font-size: 30px;
+  background-color: gray;
+}
+
+.counter button{
+  padding: 10px 20px;
+  margin: 20px;
+  background: black;
+  color: white;
+  gap: 20px;
+}
